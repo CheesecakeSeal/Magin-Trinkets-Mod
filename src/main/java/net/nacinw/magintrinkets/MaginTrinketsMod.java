@@ -13,17 +13,22 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.nacinw.magintrinkets.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(MaginTrinkets.MOD_ID)
-public class MaginTrinkets {
+@Mod(MaginTrinketsMod.MOD_ID)
+public class MaginTrinketsMod {
     public static final String MOD_ID = "magintrinketsmod";
     private static final Logger LOGGER = LogUtils.getLogger();
-    public MaginTrinkets()
+    public MaginTrinketsMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
+
         MinecraftForge.EVENT_BUS.register(this);
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
