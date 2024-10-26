@@ -1,7 +1,13 @@
 {
   "item.magintrinketsmod.thonk": "Thonk",
   "item.magintrinketsmod.legitpenguin": "Legit Penguin",
-  "item.magintrinketsmod.leon": "Leon",
+
+  "block.magintrinketsmod.tea_block": "Block of Tea",
+  "block.magintrinketsmod.hoofleok_block": "Block of Hoofleok",
+  "block.magintrinketsmod.hoofleok_ore": "Hoofleok Ore",
+  "block.magintrinketsmod.deepslate_hoofleok_ore": "Deepslate Hoofleok Ore",
+  "block.magintrinketsmod.netherrack_hoofleok_ore": "Nether Hoofleok Ore",
+  "block.magintrinketsmod.endstone_hoofleok_ore": "End Hoofleok Ore",
 
   "itemGroup.magin_trinkets_tab": "Magin Trinkets"
 }
